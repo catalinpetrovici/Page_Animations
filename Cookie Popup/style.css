@@ -24,7 +24,7 @@ body{
   color: white;
   display: flex;
   width: 33em;
-  height: 12em;
+  height: 15em;
   border-radius: 1.5em;
   padding: 1em;
   align-items: center;
@@ -38,6 +38,7 @@ body{
 
 .cookie {
   padding: 2em;
+  overflow: visible;
 }
 
 .cookie-title {
