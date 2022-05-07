@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+/* 
+body{
+    height: 100vh;
+} */
+
+.cookie-container {
+  background: linear-gradient(260deg, #9b6c50 0%, #4f2626 100%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: flex;
+  width: 33em;
+  height: 12em;
+  border-radius: 1.5em;
+  padding: 1em;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.text {
+  width: 70%;
+}
+
+.cookie {
+  padding: 2em;
+}
+
+.cookie-title {
+  font-size: 1.6rem;
+  font-weight: lighter;
+}
+
+.cookie-subtitle {
+  font-weight: bold;
+  padding: 0.5em 0;
+  font-size: 1rem;
+}
+
+button {
+  border-style: none;
+  padding: 0.5em 1em;
+  color: #4f2626;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.3em;
+}
