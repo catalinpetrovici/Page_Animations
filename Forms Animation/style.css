@@ -1,0 +1,159 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #6190e8, #a7b7b8);
+}
+
+form {
+  display: flex;
+  min-height: 40vh;
+  width: 70vw;
+  background-color: white;
+  padding: 5rem;
+  color: #777474;
+  border-radius: 2rem;
+}
+
+.title {
+  color: #639163;
+}
+
+.contact-right,
+.contact-left {
+  flex: 1;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border: none;
+  outline: none;
+  color: gray;
+  font-size: 1.3rem;
+}
+
+.input-container {
+  position: relative;
+}
+
+.placeholder {
+  transform-origin: left;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  padding: 0.3rem 0;
+  font-size: 1.3rem;
+}
+
+.line-svg {
+  position: absolute;
+  bottom: 0;
+}
+.checkbox-label {
+  font-size: 1.3rem;
+}
+.promo-container {
+  position: relative;
+  display: flex;
+}
+.checkbox {
+  opacity: 0;
+  cursor: pointer;
+}
+.checkbox-label {
+  margin-left: 1rem;
+}
+.checkbox-container {
+  position: relative;
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.tick-mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.6);
+}
+
+.checkmark,
+.checkbox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #c5c5c5;
+}
+
+.checkbox-fill {
+  position: absolute;
+  top: 100%;
+  background-color: #639163;
+  width: 100%;
+  height: 100%;
+}
+
+.line-svg {
+  max-width: 100%;
+  overflow: visible;
+  opacity: 0.8;
+}
+
+button {
+  border: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+  background-color: #6190e8;
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  max-width: 300px;
+}
+
+@media screen and (max-width: 900px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-left {
+    margin-bottom: 3rem;
+  }
+
+  .contact-right > *:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
