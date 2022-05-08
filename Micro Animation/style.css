@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(260deg, #6a9eec, #65c0d3);
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  color: black;
+  padding: 5rem 10rem;
+  border-radius: 2rem;
+}
+
+.container > :not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.home,
+.notification,
+.messages {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.home-title,
+.notification-title,
+.messages-title {
+  margin-left: 2rem;
+}
+
+.notification-svg,
+.messages-svg {
+  overflow: visible;
+}
