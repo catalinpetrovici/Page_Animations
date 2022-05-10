@@ -97,8 +97,42 @@ barba.init({
         enterAnimation(next, done, gradient);
       },
     },
+    // Product Page animation
+    {
+      name: 'product-transition',
+      sync: true,
+      from: {
+        namespace: ['handbag', 'product', 'boot', 'product', 'hat', 'product'],
+      },
+      to: {
+        namespace: ['product', 'handbag', 'product', 'boot', 'product', 'hat'],
+      },
+      enter(data) {
+        const done = this.async();
+        let next = data.next.container;
+        productEnterAnimation(next, done);
+      },
+      leave(data) {
+        const done = this.async();
+        let current = data.current.container;
+        productLeaveAnimation(current, done);
+      },
+    },
   ],
 });
+
+function productEnterAnimation(current, done) {
+  tlEnter.fromTo(current, { y: '100%', opacity: 0 }, { y: '0%', opacity: 1 });
+  tlEnter.fromTo(
+    '.card',
+    { opacity: 0, y: 50 },
+    { opacity: 1, y: 0, stagger: 0.1, onComplete: done }
+  );
+}
+
+function productLeaveAnimation(current, done) {
+  tlLeave.fromTo(current, { opacity: 1 }, { opacity: 0, onComplete: done });
+}
 
 // Changing gradient on showcase
 
