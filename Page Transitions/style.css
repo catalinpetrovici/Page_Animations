@@ -1,0 +1,113 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(260deg, #b75d62, #754d4f);
+}
+
+.showcase {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90vh;
+  padding: 0rem 15% 0rem 15%;
+  overflow: hidden;
+}
+
+nav {
+  min-height: 10vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 15%;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav img {
+  transform: scale(0.8);
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 80vh;
+  z-index: 2;
+  flex: 1;
+}
+
+.image-container img {
+  width: 80%;
+}
+
+.showcase-text {
+  flex: 1;
+  font-size: 1.6rem;
+  color: white;
+  padding-bottom: 10rem;
+}
+
+.showcase-title {
+  font-size: 4rem;
+}
+.showcase-subtitle {
+  font-weight: 400;
+  font-size: 1.6rem;
+  padding: 3rem 0;
+}
+
+.showcase-button {
+  padding: 1rem 2.5rem;
+  border: none;
+  color: black;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.showcase-arrow {
+  position: absolute;
+  right: 15%;
+  bottom: 15%;
+  transform: scale(0.7);
+  z-index: 2;
+}
+
+/* Bubbless */
+.circle {
+  position: absolute;
+}
+
+.circle-1 {
+  left: -3%;
+  bottom: -3%;
+  transform: scale(2);
+}
+
+.circle-2 {
+  left: 32%;
+  bottom: 13%;
+}
+
+.circle-3 {
+  left: 16%;
+  bottom: 64%;
+  transform: scale(1.5);
+}
