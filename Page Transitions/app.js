@@ -102,10 +102,10 @@ barba.init({
       name: 'product-transition',
       sync: true,
       from: {
-        namespace: ['handbag', 'product', 'boot', 'product', 'hat', 'product'],
+        namespace: ['handbag', 'product'],
       },
       to: {
-        namespace: ['product', 'handbag', 'product', 'boot', 'product', 'hat'],
+        namespace: ['product', 'handbag'],
       },
       enter(data) {
         const done = this.async();
