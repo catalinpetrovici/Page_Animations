@@ -199,6 +199,7 @@ a {
   position: relative;
 }
 .purchase-left {
+  background-color: white;
   display: flex;
   overflow: hidden;
   flex-direction: column;
@@ -273,6 +274,10 @@ a {
 .right-info,
 .left-info {
   width: 20%;
+}
+
+.blue {
+  z-index: 1;
 }
 
 .left-info h3,
