@@ -28,3 +28,4 @@ https://user-images.githubusercontent.com/73588411/168110888-76472d16-1764-4546-
 
 https://user-images.githubusercontent.com/73588411/168096466-8e297535-495c-47e4-89b9-5261248cc932.mp4
 
+OBS, DaVinci Resolve, HandBrake
