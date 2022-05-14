@@ -2,7 +2,7 @@
 
 -- // --
 
-Link to project: -- // --
+Link to project: [Here](https://animations-catalin.netlify.app)
 
 ![Page Animation](https://user-images.githubusercontent.com/73588411/168103571-2de7509d-d6ad-4064-bc61-9bd5f801b755.jpg)
 
