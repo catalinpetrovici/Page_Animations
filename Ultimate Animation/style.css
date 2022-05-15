@@ -345,3 +345,37 @@ a {
   transform: scale(0.83);
   border-radius: 5rem;
 }
+
+.support {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 10;
+  display: none;
+}
+
+.support h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .sixth-page,
+  nav,
+  .first-page,
+  .third-page,
+  .forth-page,
+  .fifth-page,
+  .second-page {
+    display: none;
+  }
+  .support {
+    display: block;
+  }
+}

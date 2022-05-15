@@ -1,0 +1,201 @@
+:root {
+  --gap-flex: 1rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+header {
+  min-height: 6rem;
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  font-size: 2rem;
+}
+
+nav a:link,
+nav a:active,
+nav a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:not(:last-child) {
+  margin-right: 10rem;
+}
+
+.logo {
+  width: 10rem;
+  height: 10rem;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.projects {
+  width: 100%;
+  margin: 2rem auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.content {
+  border-radius: 1rem;
+  order: 3;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 20vh;
+  background: linear-gradient(
+    150deg,
+    #0d3051 0%,
+    #0d3051 49.8%,
+    #266489 50%,
+    #266489 74.8%,
+    #3e97c1 75%,
+    #3e97c1 100%
+  );
+}
+
+.content h1 {
+  width: 100%;
+  color: white;
+  font-size: 5rem;
+  overflow: hidden;
+}
+
+.content h1 span {
+  display: block;
+}
+
+.ratio {
+  aspect-ratio: 4 / 3;
+}
+
+.project {
+  border-radius: 1rem;
+  width: calc(50% - var(--gap-flex) / 2);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.laptop-border {
+  height: 100%;
+  width: 100%;
+  background-image: url('./');
+  background-size: 100% 100%;
+}
+
+.link {
+  margin: 0 auto;
+  width: 70%;
+  height: 60%;
+  margin-bottom: 2rem;
+}
+
+.link img {
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.329);
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.forms {
+  order: 1;
+
+  background: linear-gradient(305deg, #000428, #004e92);
+}
+.cookie {
+  order: 2;
+
+  background: linear-gradient(305deg, #42275a, #734b6d);
+}
+
+.page {
+  order: 4;
+
+  background: linear-gradient(305deg, #2c3e50, #4ca1af);
+}
+.micro {
+  order: 5;
+
+  background: linear-gradient(305deg, #1d4350, #a43931);
+}
+
+@media screen and (max-width: 1000px) {
+  .project {
+    width: 100%;
+  }
+  .content {
+    order: 0;
+  }
+
+  .content h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    max-width: 90%;
+  }
+  nav a:not(:last-child) {
+    margin-right: 3rem;
+  }
+  .project {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  :root {
+    --gap-flex: 5rem;
+  }
+  .content h1 {
+    font-size: 19rem;
+  }
+  .project {
+    font-size: 6rem;
+  }
+  nav a {
+    font-size: 6rem;
+  }
+  .logo {
+    width: 25rem;
+    height: 25rem;
+  }
+  .projects {
+    gap: var(--gap-flex);
+  }
+}
